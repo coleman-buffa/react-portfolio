@@ -1,23 +1,26 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Nav from "./components/nav/nav";
+import Bio from "./pages/Bio";
+import LandingZone from "./pages/LandingZone";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <div>         
+      <Router>            
+          <Nav/>   
           <Switch>
-            <Route exact path={["/", "/home"]}>
-              {/* Landing page */}
+            <Route exact path={["/"]}>
+              <LandingZone/>
             </Route>
-            <Route exact path={["/bio", "/about"]}>
-              {/* Bio page */}
+            <Route exact path={["/bio"]}>
+              <Bio/>
             </Route>
             <Route exact path={["/portfolio"]}>
-              {/* Portfolio page */}
+              <Portfolio/>
             </Route>
           </Switch>
-        </div>
       </Router>
     </div>
   );
