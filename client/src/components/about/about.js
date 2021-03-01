@@ -2,10 +2,11 @@ import {React, useState, useEffect} from "react";
 import "./about.css";
 import ProfilePic from "./profile.jpg";
 import API from "../../utils/API";
+import Skill from "../skill/skill";
 
 function About() {
 
-  const [skills, setSkills] = useState([{}]);
+  const [skills, setSkills] = useState([]);
 
   useEffect(() => {
     loadSkills();
@@ -14,8 +15,7 @@ function About() {
   const loadSkills = () => {
     API.getSkills({})
     .then(data => {   
-      setSkills(data.data);
-      console.log(`Skills state set to: ${skills}`);
+      setSkills(data.data);      
     })
     .catch(err => console.log(err));
   };
@@ -28,7 +28,12 @@ function About() {
           <img className="portfolio-resume-headshot" src={ProfilePic} alt="headshot" />
           <h3 className="portfolio-resume-header">Skills</h3>
           <ul>
-            {/* Insert skill list item here */}
+            {skills.map(skill => (
+               <Skill 
+               key={skill.id}
+               skill={skill.skill}
+               />
+            ))}
 
           </ul>
         </div>
