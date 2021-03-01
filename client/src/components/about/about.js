@@ -1,5 +1,6 @@
 import React from "react";
 import "./about.css";
+import ProfilePic from "./profile.jpg";
 
 function About() {
   return (
@@ -7,7 +8,7 @@ function About() {
 
       <div className="large-4 cell">
         <div className="portfolio-resume-wrapper">
-          <img className="portfolio-resume-headshot" src="https://placehold.it/175" alt="headshot" />
+          <img className="portfolio-resume-headshot" src={ProfilePic} alt="headshot" />
           <h3 className="portfolio-resume-header">Skills</h3>
           <ul ID="skillList">
 

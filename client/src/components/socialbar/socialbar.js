@@ -1,6 +1,6 @@
 import React from "react";
 import "./socialbar.css";
-import "./colemanbuffa_resume.pdf"
+import Resume from "./colemanbuffa_resume.pdf"
 
 function SocialBar() {
   return (
@@ -18,7 +18,7 @@ function SocialBar() {
         </a>
       </li>
       <li className="social-icon">
-        <a href="./public/colemanbuffa_resume.pdf" target="_blank">
+        <a href={Resume} target="_blank">
           <i className="fa fa-file-pdf" aria-hidden="true"></i>
           <span className="social-icon-text">Resume</span>
         </a>
