@@ -1,7 +1,7 @@
 const db = require("../models");
 
 module.exports = function (app) {
-  app.get("/api/allskills", (req, res) => {
+  app.get("/api/skills", (req, res) => {
     db.Skill.findAll().then((data) => {
       res.json(data);
     });
@@ -15,7 +15,7 @@ module.exports = function (app) {
     });
   });
 
-  app.get("/api/allprojects", (req, res) => {
+  app.get("/api/projects", (req, res) => {
     db.Project.findAll().then((data) => {
       res.json(data);
     });
