@@ -1,12 +1,25 @@
-import React from "react";
+import {React, useState, useEffect} from "react";
 import "./about.css";
 import ProfilePic from "./profile.jpg";
 import API from "../../utils/API";
 
-// Add some functions that make API call to get skill list
-
-
 function About() {
+
+  const [skills, setSkills] = useState([{}]);
+
+  useEffect(() => {
+    loadSkills();
+  }, []);
+
+  const loadSkills = () => {
+    API.getSkills({})
+    .then(data => {   
+      setSkills(data.data);
+      console.log(`Skills state set to: ${skills}`);
+    })
+    .catch(err => console.log(err));
+  };
+
   return (
     <div className="portfolio-resume grid-x">
 
@@ -14,8 +27,8 @@ function About() {
         <div className="portfolio-resume-wrapper">
           <img className="portfolio-resume-headshot" src={ProfilePic} alt="headshot" />
           <h3 className="portfolio-resume-header">Skills</h3>
-          <ul >
-
+          <ul>
+            {/* Insert skill list item here */}
 
           </ul>
         </div>

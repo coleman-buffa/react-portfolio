@@ -18,7 +18,7 @@ function SocialBar() {
         </a>
       </li>
       <li className="social-icon">
-        <a href={Resume} target="_blank">
+        <a href={Resume} rel="noreferrer" target="_blank">
           <i className="fa fa-file-pdf" aria-hidden="true"></i>
           <span className="social-icon-text">Resume</span>
         </a>
