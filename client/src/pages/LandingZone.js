@@ -1,10 +1,12 @@
 import React from "react";
+import Hero from "../components/hero/hero";
+
 // Add component imports here
 
 function LandingZone() {
   return (
     <div>
-      Hello LandingZone
+      <Hero/>
     </div>
   );
 }

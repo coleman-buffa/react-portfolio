@@ -6,6 +6,7 @@
   font-weight: 500;
   letter-spacing: 1px;
   transition: all 0.35s ease;
+  background: transparent;
 }
 
 .menu-hover-lines li a {

@@ -11,13 +11,13 @@ function App() {
       <Router>            
           <Nav/>   
           <Switch>
-            <Route exact path={["/"]}>
+            <Route exact path="/">
               <LandingZone/>
             </Route>
-            <Route exact path={["/bio"]}>
+            <Route exact path="/bio">
               <Bio/>
             </Route>
-            <Route exact path={["/portfolio"]}>
+            <Route exact path="/portfolio">
               <Portfolio/>
             </Route>
           </Switch>
