@@ -4,6 +4,7 @@ import Nav from "./components/nav/nav";
 import Bio from "./pages/Bio";
 import LandingZone from "./pages/LandingZone";
 import Portfolio from "./pages/Portfolio";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Portfolio/>
             </Route>
           </Switch>
+          <Footer/>
       </Router>
     </div>
   );

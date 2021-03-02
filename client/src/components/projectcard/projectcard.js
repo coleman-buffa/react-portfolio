@@ -2,7 +2,6 @@ import React from "react";
 import "./projectcard.css";
 
 function ProjectCard(props) {
-  console.log(props);
   return (
     <div className="cell">
     <div className="card">
