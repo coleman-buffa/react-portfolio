@@ -10,8 +10,8 @@ function ProjectCard(props) {
         <h4>{props.title}</h4>
         <p>{props.description}</p>
         <div>
-          <a className="icon-anchor" href={props.repo_link} ><i className="fa fa-github" aria-hidden="true"></i></a>
-          <a className="icon-anchor"href={props.deployed_link}><i className="fa fa-globe" aria-hidden="true"></i></a>
+          <a className="icon-anchor" href={props.repo_link} ><i className="fa fa-github fa-2x" aria-hidden="true"></i></a>
+          <a className="icon-anchor"href={props.deployed_link}><i className="fa fa-globe fa-2x" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>

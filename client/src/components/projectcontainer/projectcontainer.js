@@ -16,7 +16,6 @@ function ProjectContainer() {
     API.getProjects({})
       .then(data => {        
         setProjects(data.data);
-        console.log(data.data);
       })
   };
 
@@ -33,7 +32,6 @@ function ProjectContainer() {
             deployed_link={project.deployed_link}
           />
         ))}
-
       </div>
     </div>
 
