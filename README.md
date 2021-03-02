@@ -19,15 +19,19 @@ Goals and methods...
 
 ## Deployed Link
 
-[Deployed to GitHub Pages]()
+[Deployed to Heroku]()
 
 ## Technologies 
 
 [React](https://reactjs.org/)
 
+[React-Router-Dom](https://www.npmjs.com/package/react-router-dom)
+
 [Foundation](https://get.foundation/)
 
 [Axios](https://www.npmjs.com/package/axios)
+
+[Sequelize](https://sequelize.org/master/index.html)
 
 
 ## Author

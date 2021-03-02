@@ -27,7 +27,7 @@ function About() {
         <div className="portfolio-resume-wrapper">
           <img className="portfolio-resume-headshot" src={ProfilePic} alt="headshot" />
           <h3 className="portfolio-resume-header">Skills</h3>
-          <ul>
+          <ul className="vertical menu">
             {skills.map(skill => (
                <Skill 
                key={skill.id}
@@ -45,10 +45,10 @@ function About() {
           <div className="portfolio-resume-spacing">
             <h5><strong>UC Berkeley Code Camp</strong></h5>
             <p>Full stack web devoper intensive training program. Attended Dec '20 - March '21.  </p>
-            <ul>
+            <ul className="vertical menu">
               <li>MERN Stack</li>
               <li>Computer Science Concepts</li>
-              <li>Leading Industry Training</li>
+              <li>Industry Leading Training</li>
             </ul>
           </div>
           <div className="portfolio-resume-spacing">
