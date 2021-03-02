@@ -8,10 +8,18 @@ module.exports = function (sequelize, DataTypes) {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		link: {
+		image_link: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    repo_link: {
 			type: DataTypes.STRING,
 			allowNull: false
-		}
+		},
+    deployed_link: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
 	});
 	Project.associate = models => {
 		models.Project.hasMany(models.ProjectSkills, {onDelete: "cascade"});

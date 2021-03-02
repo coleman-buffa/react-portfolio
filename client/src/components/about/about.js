@@ -34,11 +34,10 @@ function About() {
                skill={skill.skill}
                />
             ))}
-
           </ul>
         </div>
       </div>
-
+      
       <div className="large-4 cell">
         <div className="portfolio-resume-wrapper">
           <h3 className="portfolio-resume-header">Experience</h3>
@@ -67,7 +66,6 @@ function About() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }

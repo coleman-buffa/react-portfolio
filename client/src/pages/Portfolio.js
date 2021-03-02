@@ -5,8 +5,7 @@ import ProjectContainer from "../components/projectcontainer/projectcontainer";
 
 function Portfolio() {
   return (
-    <div>
-      Hello portfolio
+    <div>      
       <SocialBar/>
       <ProjectContainer/>
     </div>
