@@ -21,7 +21,7 @@ function ProjectContainer() {
 
   return (
     <div className="grid-container">
-      <div className="grid-x grid-margin-x small-up-2 medium-up-3">
+      <div className="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
         {projects.map(project => (
           <ProjectCard
             key={project.id}
@@ -34,7 +34,6 @@ function ProjectContainer() {
         ))}
       </div>
     </div>
-
   );
 }
 

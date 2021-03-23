@@ -1,3 +1,8 @@
 .icon-anchor {
   margin: auto 50px;
 }
+
+.card-image {
+  height: 300;
+  width: 300;
+}

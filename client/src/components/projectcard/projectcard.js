@@ -5,7 +5,7 @@ function ProjectCard(props) {
   return (
     <div className="cell">
     <div className="card">
-      <img src={props.image_link} alt={props.title} />
+      <img className="card-image" src={props.image_link} alt={props.title} />
       <div className="card-section">
         <h4>{props.title}</h4>
         <p>{props.description}</p>
