@@ -3,6 +3,10 @@
 }
 
 .card-image {
-  height: 300;
-  width: 300;
+  height: 400px;
+  width: 400px;
+}
+
+.card {
+  height: 80%;
 }
