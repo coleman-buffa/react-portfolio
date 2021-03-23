@@ -6,8 +6,6 @@ function Footer() {
     <footer>  
        Portfolio designed and built by Coleman Buffa March 2021      
     </footer>
-
-
   );
 }
 
