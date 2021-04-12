@@ -67,8 +67,7 @@ module.exports = {
         skill: "Heroku",
         createdAt: new Date(),
         updatedAt: new Date()
-      },
-
+      }
     ]);
   },
 

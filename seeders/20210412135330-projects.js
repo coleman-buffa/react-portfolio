@@ -2,7 +2,6 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-
     await queryInterface.bulkInsert('projects', [
       {
         title: "Media Plug",
@@ -14,20 +13,11 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        title: "Media Plug",
-        description: "User authenticated full stack application built in a team setting",
-        image_link: "./images/book-reactor.gif",
-        repo_link: "https://github.com/coleman-buffa/media-plug",
-        deployed_link: "https://book-reactor.herokuapp.com/search",
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
         title: "Book Reactor",
-        description: "MERN Stack App using Google Books API", "./images/book-reactor.gif",
-        image_link: "./images/media-plug.gif",
+        description: "MERN Stack App using Google Books API",
+        image_link: "./images/book-reactor.gif",
         repo_link: "https://github.com/coleman-buffa/react-books",
-        deployed_link: "https://media-plug.herokuapp.com/",
+        deployed_link: "https://book-reactor.herokuapp.com/search",
         createdAt: new Date(),
         updatedAt: new Date()
       },
